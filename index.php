@@ -22,7 +22,7 @@ else {
 <main>
     <h1>Dodaj wydarzenie</h1>
     <form method="POST" action="./dodaj_wydarzenie.php">
-        <label for="i1">Data</label><input name="i1" type="null">
+        <label for="i1">Data</label><input name="i1" type="date">
         <label for="i2">Czas</label><input name="i2" type="time">
         <label for="i3">Dane</label><input name="i3" type="text">
         <label>Wyślij zapytanie</label>
