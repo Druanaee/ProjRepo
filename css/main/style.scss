@@ -19,13 +19,13 @@ body {
             margin-left:6vh;
         }
         #settings {
+            display:block;
             margin-top: 5vh;
             margin-bottom: 5vh;
             height: 5vh;
-            margin-right: 5vw;
+            margin-right: 5vh;
             width: 5vw;
-            background: url('./png/to.png') top left no-repeat;
-            background-size: 5vw 5vh;
+            background: url('projekt./png/to.png') top left no-repeat;
             border:none;
         }
     }
