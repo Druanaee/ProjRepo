@@ -8,34 +8,43 @@ body {
         display: flex;
         flex-direction: row;
         row-gap: 40vw;
-        border: 5px solid black;
         height: 15vh;
         line-height: 14vh;
-        background-image: radial-gradient(lightblue, blue , white );
+        background-image: radial-gradient(lightblue, blue , darkblue );
         >h1 {
             text-align: center;
             font-family:'Courier New', Courier, monospace;
             width: 100vw;
-            margin-left:6vh;
+            margin-left:13vh;
         }
         #settings {
             margin-top: 5vh;
             margin-bottom: 5vh;
             height: 5vh;
-            margin-right: 5vw;
-            width: 5vw;
-            background: url('./to.png') top left no-repeat;
-            background-size: 5vw 5vh;
+            margin-right: 20px;
+            width: 50px;
+            background: url('./png/to.png') top left no-repeat;
+            background-size: 30px 30px;
             border:none;
+        }
+        #login {
+            width: 50px;
+            margin-right: 20px;
+            border:none;
+            background:none;
+            text-align: center;
+            text-decoration:underline;
+            color: rgb(10, 10, 54);
         }
     }
     >nav {
         >ul {
             display: flex;
             flex-direction: row;
-            height: 5vh;
-            line-height: 5vh;
-            background-color: #004;
+            height: 8vh;
+            line-height: 8vh;
+            background-color: darkblue;
+            border-top: solid;
             >li {
                 width: 20vw;
                 list-style-type: none;
@@ -47,7 +56,39 @@ body {
             }
         }
     }
-//     main {
-
-//     }
+    main {
+        width:80vw;
+        margin: auto;
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column; 
+        .art-container-1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4vw;
+            row-gap: 4vw;
+        }
+        .art-container-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4vw;
+            row-gap: 4vw;
+        }
+        .art-art {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            display: block;
+            border: solid;
+            border-radius: 10px;
+        }
+        .art {
+            width: 38vw;
+            border:solid;
+            border-radius: 10px;
+            
+            >section{
+                
+            }
+        }
+    }
 }
