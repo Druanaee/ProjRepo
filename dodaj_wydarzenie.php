@@ -1,5 +1,5 @@
 <?php
-include("./index.php");
+include "index.php";
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $data = $_POST["i1"];
     $czas = $_POST["i2"];
