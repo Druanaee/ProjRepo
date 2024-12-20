@@ -1,55 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-    width: 100%;
-    height: 10vh;
-    background-color: coral;
+body {
+  background-color: rgb(0, 0, 195);
 }
-/* nav {
-
-} */
-nav > ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    list-style-type: none;
-    width: 100%;
-    justify-content: center;
+body > header {
+  display: flex;
+  flex-direction: row;
+  row-gap: 40vw;
+  height: 15vh;
+  line-height: 14vh;
+  background-image: radial-gradient(lightblue, blue, darkblue);
 }
-nav > ul > li {
-    padding: 8px;
-    border: 1px solid black;
+body > header > h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  width: 100vw;
+  margin-left: 13vh;
 }
-
-main {
-    background-color: khaki;
-
+body > header #settings {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  height: 50px;
+  margin-right: 20px;
+  width: 50px;
+  background: url("./png/to.png") left no-repeat;
+  background-size: 30px 30px;
+  border: none;
 }
-main > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+body > header .set {
+  display: none;
 }
-main > form > * {
-    flex: 0;
-    align-self: center;
-    width: 300px;
+body > header #login {
+  width: 50px;
+  margin-right: 20px;
+  border: none;
+  background: none;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(10, 10, 54);
 }
-main > h1 {
-    text-align: center;
+body > nav {
+  height: 8vh;
+  line-height: 8vh;
 }
-table {
-    border-collapse: collapse;
-    border: 1px solid black;
+body > nav > ul {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 195);
+  border-top: solid;
+  border-bottom: solid;
 }
-td,
-th {
-    width: 100px;
-    height: 50px;
-    border: 1px solid black;
-    text-align: center;
+body > nav > ul > li {
+  width: 20vw;
+  list-style-type: none;
+  text-align: center;
 }
+body > nav > ul > li :hover {
+  background-color: blue;
+}
+body > nav > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: lightblue;
+}
+body main {
+  color: lightblue;
+  width: 80vw;
+  margin: auto;
+  padding-top: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+body main .art-container-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 4vw;
+       column-gap: 4vw;
+  row-gap: 4vw;
+}
+body main .art-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 4vw;
+       column-gap: 4vw;
+  row-gap: 4vw;
+}
+body main .art-png {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: block;
+  border-radius: 10px;
+  padding: 5px;
+}
+body main .art {
+  background-image: radial-gradient(closest-side, rgb(0, 0, 255) 10%, rgb(0, 0, 195) 100%);
+  width: 38vw;
+  border-radius: 10px;
+}
+body main .art > article > header > h3 {
+  text-align: center;
+}
+body main .art > article > section {
+  padding: 5px;
+}
+body main .art-head {
+  background-image: radial-gradient(closest-side, rgb(0, 0, 255), rgb(0, 0, 195));
+  display: block;
+  height: 190px;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+body main .art-head > header {
+  padding-top: 5px;
+  height: 7vh;
+  line-height: 5vh;
+}
+body main .art-head > header > h3 {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
