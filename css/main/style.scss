@@ -26,23 +26,10 @@ body {
             width: 50px;
             background: url('./png/to.png') left no-repeat;
             background-size: 30px 30px;
-            border:none;    
+            border:none;
         }
         .set {
-                display:grid;
-                flex-direction: column;
-                background-size: 30xp 30px;
-                position: absolute;
-                bottom: 50px;
-        }
-        #white {
-            background: url('./png/dotW.png') left no-repeat;
-        }
-        #blue {
-            background: url('./png/dotBl.png') left no-repeat;
-        }
-        #black {
-            background: url('./png/dotB.png') left no-repeat;
+            display: none;
         }
         #login {
             width: 50px;
