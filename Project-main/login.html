@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylelogin.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/src/sha256.min.js"></script>
+    <script src="./themechange.js"></script>
+    <script src="./BackHome.js"></script>
+    <script src="./lib/auth.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const loginForms = document.getElementsByClassName('login-form');
+        if (loginForms.length === 0) {
+          console.error('No login form found');
+          return;
+        }
+        
+        if (loginForms.length > 1)
+          console.warn('There is more than one login form.');
+        
+        loginForms[0].addEventListener('submit', window.authFormCallback);
+      })
+    </script>
+</head>
+<body class="dark">
+    <header>
+      <button id="logo"></button>
+        <div id="themeToggleDiv">
+            <button id="themeToggle"></button>
+        </div>
+    </header>
+    <main>
+        <form class="login-form" method="post">
+          
+            <div class="container">
+              <label for="username"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="username" class="username" required>
+          
+              <label for="password"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="password" class="password" required>
+          
+              <button type="submit" id="loginbtn">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+              </label>
+            </div>
+          
+            <div class="container" id="logincont">
+              <span class="psw" id="creatacc">Dont have an accout?<a href="http://notik.nameless.pw/Project-main/CreateAnAccount.html"> Create one today!</a></span>
+            </div>
+          </form>
+    </main>
+    <footer>
+        <p>2024-2025</p>
+    </footer>
+</body>
+</html> 
